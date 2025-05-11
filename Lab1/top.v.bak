@@ -1,0 +1,25 @@
+module top(
+    input [17:0] SW,
+    output [6:0] HEX0, HEX1, HEX2, HEX3, HEX4, HEX5, HEX6
+);
+    wire [3:0] bcd [6:0];
+
+    binary_to_bcd converter(
+        .binary(SW),
+        .bcd6(bcd[6]),
+        .bcd5(bcd[5]),
+        .bcd4(bcd[4]),
+        .bcd3(bcd[3]),
+        .bcd2(bcd[2]),
+        .bcd1(bcd[1]),
+        .bcd0(bcd[0])
+    );
+
+    bcd_to_7seg disp0(.bcd(bcd[0]), .seg(HEX0));
+    bcd_to_7seg disp1(.bcd(bcd[1]), .seg(HEX1));
+    bcd_to_7seg disp2(.bcd(bcd[2]), .seg(HEX2));
+    bcd_to_7seg disp3(.bcd(bcd[3]), .seg(HEX3));
+    bcd_to_7seg disp4(.bcd(bcd[4]), .seg(HEX4));
+    bcd_to_7seg disp5(.bcd(bcd[5]), .seg(HEX5));
+    bcd_to_7seg disp6(.bcd(bcd[6]), .seg(HEX6));
+endmodule
