@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 15 18:54:27 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : lab3_muxdemux
+Top-level Entity Name : top_mux_demux
+Family : Cyclone IV E
+Total logic elements : 192
+    Total combinational functions : 192
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 322
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,98 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/Lab3/simulation/modelsim
+vdemux
+Z1 !s110 1747361389
+!i10b 1
+!s100 _UT9D`GZ4XCm]dVDi5jzW3
+IPLA>eZRTml0a1BS@YP:zK0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1747186690
+8D:/Verilog/Lab3/demux.v
+FD:/Verilog/Lab3/demux.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1747361389.000000
+!s107 D:/Verilog/Lab3/demux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/demux.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Verilog/Lab3
+Z7 tCvgOpt 0
+vmux
+R1
+!i10b 1
+!s100 aEmGoAG^fV^EG_no[TO@N0
+I6b8c<?m6RJPjd6?VXJ`0W1
+R2
+R0
+w1747186646
+8D:/Verilog/Lab3/mux.v
+FD:/Verilog/Lab3/mux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/Lab3/mux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/mux.v|
+!i113 1
+R5
+R6
+R7
+vtb_mux_demux
+Z8 !s110 1747361390
+!i10b 1
+!s100 b2MHUM:B<3ncNIh;E:8I:2
+I1O?m5of5nEJLXVl=[9hcL2
+R2
+R0
+w1747233753
+8D:/Verilog/Lab3/tb_mux_demux.v
+FD:/Verilog/Lab3/tb_mux_demux.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z9 !s108 1747361390.000000
+!s107 D:/Verilog/Lab3/tb_mux_demux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/tb_mux_demux.v|
+!i113 1
+R5
+R6
+R7
+vtop_mux_demux
+R8
+!i10b 1
+!s100 IiKCZT0BaMT<ZLi0FAC;Z0
+Ie<C6J?3mVB5mhL8]ONS@12
+R2
+R0
+w1747269422
+8D:/Verilog/Lab3/top_mux_demux.v
+FD:/Verilog/Lab3/top_mux_demux.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/Verilog/Lab3/top_mux_demux.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/top_mux_demux.v|
+!i113 1
+R5
+R6
+R7

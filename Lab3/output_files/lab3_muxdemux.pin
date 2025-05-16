@@ -1,0 +1,850 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1:       2.5V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:       2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+CHIP  "lab3_muxdemux"  ASSIGNED TO AN: EP4CE115F29C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+mux_in[0]                    : A6        : input  : 2.5 V             :         : 8         : N              
+mux_in[39]                   : A7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A8        :        :                   :         : 8         :                
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+mux_in[102]                  : A10       : input  : 2.5 V             :         : 8         : N              
+mux_in[101]                  : A11       : input  : 2.5 V             :         : 8         : N              
+mux_in[32]                   : A12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+GND+                         : A15       :        :                   :         : 7         :                
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+demux_out[76]                : A17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : A18       :        :                   :         : 7         :                
+demux_out[67]                : A19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+demux_out[102]               : A21       : output : 2.5 V             :         : 7         : N              
+demux_out[101]               : A22       : output : 2.5 V             :         : 7         : N              
+demux_out[94]                : A23       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+demux_out[27]                : A25       : output : 2.5 V             :         : 7         : N              
+demux_out[29]                : A26       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+demux_out[112]               : AA3       : output : 2.5 V             :         : 2         : N              
+demux_out[82]                : AA4       : output : 2.5 V             :         : 2         : N              
+mux_in[28]                   : AA5       : input  : 2.5 V             :         : 2         : N              
+mux_in[55]                   : AA6       : input  : 2.5 V             :         : 2         : N              
+mux_in[92]                   : AA7       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA8       :        :                   :         : 3         :                
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA10      :        :                   :         : 3         :                
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+mux_out[20]                  : AA12      : output : 2.5 V             :         : 3         : N              
+mux_in[54]                   : AA13      : input  : 2.5 V             :         : 3         : N              
+mux_in[116]                  : AA14      : input  : 2.5 V             :         : 3         : N              
+mux_in[10]                   : AA15      : input  : 2.5 V             :         : 4         : N              
+mux_in[8]                    : AA16      : input  : 2.5 V             :         : 4         : N              
+mux_in[79]                   : AA17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+demux_out[42]                : AA19      : output : 2.5 V             :         : 4         : N              
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+demux_out[9]                 : AA21      : output : 2.5 V             :         : 4         : N              
+demux_out[57]                : AA22      : output : 2.5 V             :         : 5         : N              
+demux_out[24]                : AA23      : output : 2.5 V             :         : 5         : N              
+demux_out[90]                : AA24      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA25      :        :                   :         : 5         :                
+demux_in[26]                 : AA26      : input  : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB1       :        :                   :         : 2         :                
+demux_out[47]                : AB2       : output : 2.5 V             :         : 2         : N              
+demux_out[113]               : AB3       : output : 2.5 V             :         : 2         : N              
+mux_in[23]                   : AB4       : input  : 2.5 V             :         : 2         : N              
+mux_in[122]                  : AB5       : input  : 2.5 V             :         : 2         : N              
+mux_in[90]                   : AB6       : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB7       :        :                   :         : 3         :                
+mux_in[62]                   : AB8       : input  : 2.5 V             :         : 3         : N              
+mux_in[126]                  : AB9       : input  : 2.5 V             :         : 3         : N              
+mux_out[18]                  : AB10      : output : 2.5 V             :         : 3         : N              
+mux_out[19]                  : AB11      : output : 2.5 V             :         : 3         : N              
+mux_in[81]                   : AB12      : input  : 2.5 V             :         : 3         : N              
+mux_in[48]                   : AB13      : input  : 2.5 V             :         : 3         : N              
+mux_out[17]                  : AB14      : output : 2.5 V             :         : 3         : N              
+mux_in[40]                   : AB15      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB16      :        :                   :         : 4         :                
+mux_in[74]                   : AB17      : input  : 2.5 V             :         : 4         : N              
+demux_out[71]                : AB18      : output : 2.5 V             :         : 4         : N              
+demux_out[105]               : AB19      : output : 2.5 V             :         : 4         : N              
+demux_out[7]                 : AB20      : output : 2.5 V             :         : 4         : N              
+demux_in[10]                 : AB21      : input  : 2.5 V             :         : 4         : N              
+demux_out[104]               : AB22      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
+demux_out[87]                : AB24      : output : 2.5 V             :         : 5         : N              
+demux_out[88]                : AB25      : output : 2.5 V             :         : 5         : N              
+demux_out[23]                : AB26      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB27      :        :                   :         : 5         :                
+demux_out[89]                : AB28      : output : 2.5 V             :         : 5         : N              
+demux_out[18]                : AC1       : output : 2.5 V             :         : 2         : N              
+demux_out[49]                : AC2       : output : 2.5 V             :         : 2         : N              
+demux_out[15]                : AC3       : output : 2.5 V             :         : 2         : N              
+mux_in[119]                  : AC4       : input  : 2.5 V             :         : 2         : N              
+mux_in[91]                   : AC5       : input  : 2.5 V             :         : 2         : N              
+GND                          : AC6       : gnd    :                   :         :           :                
+mux_in[30]                   : AC7       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC8       :        :                   :         : 3         :                
+GND                          : AC9       : gnd    :                   :         :           :                
+mux_out[22]                  : AC10      : output : 2.5 V             :         : 3         : N              
+mux_in[83]                   : AC11      : input  : 2.5 V             :         : 3         : N              
+mux_in[18]                   : AC12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC14      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC15      :        :                   :         : 4         :                
+GND                          : AC16      : gnd    :                   :         :           :                
+mux_in[12]                   : AC17      : input  : 2.5 V             :         : 4         : N              
+mux_in[105]                  : AC18      : input  : 2.5 V             :         : 4         : N              
+mux_in[111]                  : AC19      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+demux_out[40]                : AC21      : output : 2.5 V             :         : 4         : N              
+demux_in[9]                  : AC22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AC23      : gnd    :                   :         :           :                
+demux_out[39]                : AC24      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
+demux_out[58]                : AC26      : output : 2.5 V             :         : 5         : N              
+demux_out[25]                : AC27      : output : 2.5 V             :         : 5         : N              
+demux_out[121]               : AC28      : output : 2.5 V             :         : 5         : N              
+demux_in[17]                 : AD1       : input  : 2.5 V             :         : 2         : N              
+demux_out[17]                : AD2       : output : 2.5 V             :         : 2         : N              
+demux_out[114]               : AD3       : output : 2.5 V             :         : 2         : N              
+mux_out[24]                  : AD4       : output : 2.5 V             :         : 3         : N              
+mux_in[123]                  : AD5       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+mux_in[93]                   : AD7       : input  : 2.5 V             :         : 3         : N              
+mux_in[57]                   : AD8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+mux_in[87]                   : AD10      : input  : 2.5 V             :         : 3         : N              
+mux_in[52]                   : AD11      : input  : 2.5 V             :         : 3         : N              
+mux_in[22]                   : AD12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+mux_in[115]                  : AD14      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD15      :        :                   :         : 4         :                
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+mux_in[106]                  : AD17      : input  : 2.5 V             :         : 4         : N              
+mux_in[9]                    : AD18      : input  : 2.5 V             :         : 4         : N              
+mux_in[109]                  : AD19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+demux_out[8]                 : AD21      : output : 2.5 V             :         : 4         : N              
+demux_out[73]                : AD22      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+demux_out[41]                : AD24      : output : 2.5 V             :         : 4         : N              
+demux_out[10]                : AD25      : output : 2.5 V             :         : 4         : N              
+demux_out[26]                : AD26      : output : 2.5 V             :         : 5         : N              
+demux_out[119]               : AD27      : output : 2.5 V             :         : 5         : N              
+demux_out[122]               : AD28      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE1       :        :                   :         : 2         :                
+demux_out[81]                : AE2       : output : 2.5 V             :         : 2         : N              
+mux_in[120]                  : AE3       : input  : 2.5 V             :         : 2         : N              
+mux_in[24]                   : AE4       : input  : 2.5 V             :         : 3         : N              
+mux_in[26]                   : AE5       : input  : 2.5 V             :         : 3         : N              
+mux_in[59]                   : AE6       : input  : 2.5 V             :         : 3         : N              
+mux_in[113]                  : AE7       : input  : 2.5 V             :         : 3         : N              
+mux_in[95]                   : AE8       : input  : 2.5 V             :         : 3         : N              
+mux_in[31]                   : AE9       : input  : 2.5 V             :         : 3         : N              
+mux_in[53]                   : AE10      : input  : 2.5 V             :         : 3         : N              
+mux_in[117]                  : AE11      : input  : 2.5 V             :         : 3         : N              
+mux_out[16]                  : AE12      : output : 2.5 V             :         : 3         : N              
+mux_in[16]                   : AE13      : input  : 2.5 V             :         : 3         : N              
+mux_in[86]                   : AE14      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE15      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE16      :        :                   :         : 4         :                
+mux_in[47]                   : AE17      : input  : 2.5 V             :         : 4         : N              
+mux_in[46]                   : AE18      : input  : 2.5 V             :         : 4         : N              
+mux_in[72]                   : AE19      : input  : 2.5 V             :         : 4         : N              
+mux_in[75]                   : AE20      : input  : 2.5 V             :         : 4         : N              
+mux_in[45]                   : AE21      : input  : 2.5 V             :         : 4         : N              
+mux_in[43]                   : AE22      : input  : 2.5 V             :         : 4         : N              
+demux_out[106]               : AE23      : output : 2.5 V             :         : 4         : N              
+demux_out[74]                : AE24      : output : 2.5 V             :         : 4         : N              
+mux_in[104]                  : AE25      : input  : 2.5 V             :         : 4         : N              
+demux_out[55]                : AE26      : output : 2.5 V             :         : 5         : N              
+demux_in[24]                 : AE27      : input  : 2.5 V             :         : 5         : N              
+demux_out[56]                : AE28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+mux_in[58]                   : AF2       : input  : 2.5 V             :         : 2         : N              
+mux_out[26]                  : AF3       : output : 2.5 V             :         : 3         : N              
+mux_out[29]                  : AF4       : output : 2.5 V             :         : 3         : N              
+mux_in[27]                   : AF5       : input  : 2.5 V             :         : 3         : N              
+mux_in[124]                  : AF6       : input  : 2.5 V             :         : 3         : N              
+mux_out[31]                  : AF7       : output : 2.5 V             :         : 3         : N              
+mux_in[50]                   : AF8       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF9       :        :                   :         : 3         :                
+mux_in[19]                   : AF10      : input  : 2.5 V             :         : 3         : N              
+mux_in[118]                  : AF11      : input  : 2.5 V             :         : 3         : N              
+mux_in[17]                   : AF12      : input  : 2.5 V             :         : 3         : N              
+mux_in[85]                   : AF13      : input  : 2.5 V             :         : 3         : N              
+mux_in[82]                   : AF14      : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF15      :        :                   :         : 4         :                
+mux_out[9]                   : AF16      : output : 2.5 V             :         : 4         : N              
+mux_in[13]                   : AF17      : input  : 2.5 V             :         : 4         : N              
+mux_in[76]                   : AF18      : input  : 2.5 V             :         : 4         : N              
+mux_in[78]                   : AF19      : input  : 2.5 V             :         : 4         : N              
+mux_in[11]                   : AF20      : input  : 2.5 V             :         : 4         : N              
+mux_out[11]                  : AF21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF22      :        :                   :         : 4         :                
+demux_out[72]                : AF23      : output : 2.5 V             :         : 4         : N              
+mux_in[15]                   : AF24      : input  : 2.5 V             :         : 4         : N              
+mux_in[77]                   : AF25      : input  : 2.5 V             :         : 4         : N              
+mux_in[42]                   : AF26      : input  : 2.5 V             :         : 4         : N              
+demux_in[23]                 : AF27      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+mux_in[125]                  : AG3       : input  : 2.5 V             :         : 3         : N              
+mux_out[28]                  : AG4       : output : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+mux_in[60]                   : AG6       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG7       :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG8       :        :                   :         : 3         :                
+GND                          : AG9       : gnd    :                   :         :           :                
+mux_out[21]                  : AG10      : output : 2.5 V             :         : 3         : N              
+mux_in[80]                   : AG11      : input  : 2.5 V             :         : 3         : N              
+mux_in[49]                   : AG12      : input  : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+GND+                         : AG14      :        :                   :         : 3         :                
+mux_in[64]                   : AG15      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG16      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG17      :        :                   :         : 4         :                
+mux_out[15]                  : AG18      : output : 2.5 V             :         : 4         : N              
+mux_out[10]                  : AG19      : output : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+mux_in[110]                  : AG21      : input  : 2.5 V             :         : 4         : N              
+mux_in[14]                   : AG22      : input  : 2.5 V             :         : 4         : N              
+mux_in[44]                   : AG23      : input  : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+mux_in[108]                  : AG25      : input  : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AG26      :        :                   :         : 4         :                
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+mux_in[121]                  : AH3       : input  : 2.5 V             :         : 3         : N              
+mux_in[94]                   : AH4       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+mux_in[56]                   : AH6       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH7       :        :                   :         : 3         :                
+mux_in[84]                   : AH8       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+mux_in[127]                  : AH10      : input  : 2.5 V             :         : 3         : N              
+mux_in[63]                   : AH11      : input  : 2.5 V             :         : 3         : N              
+mux_in[51]                   : AH12      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+GND+                         : AH14      :        :                   :         : 3         :                
+sel[1]                       : AH15      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AH17      :        :                   :         : 4         :                
+mux_out[14]                  : AH18      : output : 2.5 V             :         : 4         : N              
+mux_in[107]                  : AH19      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+mux_out[12]                  : AH21      : output : 2.5 V             :         : 4         : N              
+mux_in[41]                   : AH22      : input  : 2.5 V             :         : 4         : N              
+mux_in[73]                   : AH23      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+mux_out[13]                  : AH25      : output : 2.5 V             :         : 4         : N              
+demux_in[8]                  : AH26      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+GND                          : B5        : gnd    :                   :         :           :                
+mux_in[34]                   : B6        : input  : 2.5 V             :         : 8         : N              
+mux_in[6]                    : B7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B8        :        :                   :         : 8         :                
+GND                          : B9        : gnd    :                   :         :           :                
+mux_in[69]                   : B10       : input  : 2.5 V             :         : 8         : N              
+mux_in[36]                   : B11       : input  : 2.5 V             :         : 8         : N              
+GND                          : B12       : gnd    :                   :         :           :                
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+GND+                         : B15       :        :                   :         : 7         :                
+GND                          : B16       : gnd    :                   :         :           :                
+demux_out[12]                : B17       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B18       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B19       :        :                   :         : 7         :                
+GND                          : B20       : gnd    :                   :         :           :                
+demux_out[68]                : B21       : output : 2.5 V             :         : 7         : N              
+demux_out[3]                 : B22       : output : 2.5 V             :         : 7         : N              
+demux_out[125]               : B23       : output : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+demux_in[28]                 : B25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B26       :        :                   :         : 7         :                
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
+mux_in[2]                    : C9        : input  : 2.5 V             :         : 8         : N              
+mux_in[97]                   : C10       : input  : 2.5 V             :         : 8         : N              
+mux_out[0]                   : C11       : output : 2.5 V             :         : 8         : N              
+mux_out[5]                   : C12       : output : 2.5 V             :         : 8         : N              
+mux_in[65]                   : C13       : input  : 2.5 V             :         : 8         : N              
+mux_in[103]                  : C14       : input  : 2.5 V             :         : 8         : N              
+demux_in[12]                 : C15       : input  : 2.5 V             :         : 7         : N              
+demux_out[45]                : C16       : output : 2.5 V             :         : 7         : N              
+demux_out[99]                : C17       : output : 2.5 V             :         : 7         : N              
+demux_out[69]                : C18       : output : 2.5 V             :         : 7         : N              
+demux_out[35]                : C19       : output : 2.5 V             :         : 7         : N              
+demux_out[37]                : C20       : output : 2.5 V             :         : 7         : N              
+demux_out[36]                : C21       : output : 2.5 V             :         : 7         : N              
+demux_out[91]                : C22       : output : 2.5 V             :         : 7         : N              
+demux_out[61]                : C23       : output : 2.5 V             :         : 7         : N              
+demux_out[28]                : C24       : output : 2.5 V             :         : 7         : N              
+demux_out[62]                : C25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C27       :        :                   :         : 6         :                
+GND                          : C28       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+GND                          : D3        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D8        :        :                   :         : 8         :                
+mux_in[5]                    : D9        : input  : 2.5 V             :         : 8         : N              
+mux_in[4]                    : D10       : input  : 2.5 V             :         : 8         : N              
+mux_out[1]                   : D11       : output : 2.5 V             :         : 8         : N              
+mux_in[99]                   : D12       : input  : 2.5 V             :         : 8         : N              
+mux_in[3]                    : D13       : input  : 2.5 V             :         : 8         : N              
+mux_in[7]                    : D14       : input  : 2.5 V             :         : 8         : N              
+mux_out[4]                   : D15       : output : 2.5 V             :         : 7         : N              
+demux_out[107]               : D16       : output : 2.5 V             :         : 7         : N              
+demux_out[100]               : D17       : output : 2.5 V             :         : 7         : N              
+demux_out[5]                 : D18       : output : 2.5 V             :         : 7         : N              
+demux_in[4]                  : D19       : input  : 2.5 V             :         : 7         : N              
+demux_out[38]                : D20       : output : 2.5 V             :         : 7         : N              
+demux_out[123]               : D21       : output : 2.5 V             :         : 7         : N              
+demux_in[27]                 : D22       : input  : 2.5 V             :         : 7         : N              
+demux_out[60]                : D23       : output : 2.5 V             :         : 7         : N              
+demux_in[29]                 : D24       : input  : 2.5 V             :         : 7         : N              
+demux_out[126]               : D25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+sel[0]                       : E7        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E8        :        :                   :         : 8         :                
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E10       :        :                   :         : 8         :                
+mux_out[6]                   : E11       : output : 2.5 V             :         : 8         : N              
+mux_in[1]                    : E12       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+mux_in[70]                   : E14       : input  : 2.5 V             :         : 8         : N              
+mux_in[100]                  : E15       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+demux_out[75]                : E17       : output : 2.5 V             :         : 7         : N              
+demux_in[5]                  : E18       : input  : 2.5 V             :         : 7         : N              
+demux_out[92]                : E19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+demux_out[59]                : E21       : output : 2.5 V             :         : 7         : N              
+demux_in[30]                 : E22       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+demux_out[70]                : E24       : output : 2.5 V             :         : 7         : N              
+demux_in[3]                  : E25       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F5        :        :                   :         : 1         :                
+GND                          : F6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
+GND                          : F9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8         :                
+mux_in[68]                   : F11       : input  : 2.5 V             :         : 8         : N              
+mux_out[7]                   : F12       : output : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+mux_in[66]                   : F14       : input  : 2.5 V             :         : 8         : N              
+demux_out[109]               : F15       : output : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+demux_out[14]                : F17       : output : 2.5 V             :         : 7         : N              
+demux_out[4]                 : F18       : output : 2.5 V             :         : 7         : N              
+demux_out[124]               : F19       : output : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+demux_out[93]                : F21       : output : 2.5 V             :         : 7         : N              
+demux_out[30]                : F22       : output : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
+mux_in[37]                   : G11       : input  : 2.5 V             :         : 8         : N              
+mux_out[3]                   : G12       : output : 2.5 V             :         : 8         : N              
+mux_in[33]                   : G13       : input  : 2.5 V             :         : 8         : N              
+mux_in[67]                   : G14       : input  : 2.5 V             :         : 8         : N              
+demux_in[14]                 : G15       : input  : 2.5 V             :         : 7         : N              
+demux_out[44]                : G16       : output : 2.5 V             :         : 7         : N              
+demux_out[6]                 : G17       : output : 2.5 V             :         : 7         : N              
+demux_out[11]                : G18       : output : 2.5 V             :         : 7         : N              
+demux_out[46]                : G19       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G21       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G22       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G28       :        :                   :         : 6         :                
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
+GNDA3                        : H9        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 8         :                
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+mux_in[71]                   : H12       : input  : 2.5 V             :         : 8         : N              
+mux_in[98]                   : H13       : input  : 2.5 V             :         : 8         : N              
+mux_out[2]                   : H14       : output : 2.5 V             :         : 8         : N              
+demux_in[11]                 : H15       : input  : 2.5 V             :         : 7         : N              
+demux_out[110]               : H16       : output : 2.5 V             :         : 7         : N              
+demux_out[108]               : H17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+demux_out[13]                : H19       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+demux_out[78]                : H21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H26       :        :                   :         : 6         :                
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+GND+                         : J1        :        :                   :         : 1         :                
+GND                          : J2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J7        :        :                   :         : 1         :                
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J10       :        :                   :         : 8         :                
+GND                          : J11       : gnd    :                   :         :           :                
+mux_in[96]                   : J12       : input  : 2.5 V             :         : 8         : N              
+mux_in[35]                   : J13       : input  : 2.5 V             :         : 8         : N              
+mux_in[38]                   : J14       : input  : 2.5 V             :         : 8         : N              
+demux_out[43]                : J15       : output : 2.5 V             :         : 7         : N              
+demux_out[77]                : J16       : output : 2.5 V             :         : 7         : N              
+demux_in[13]                 : J17       : input  : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J19       :        :                   :         : 7         :                
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J26       :        :                   :         : 6         :                
+demux_in[7]                  : J27       : input  : 2.5 V             :         : 6         : N              
+demux_in[6]                  : J28       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K4        :        :                   :         : 1         :                
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K8        :        :                   :         : 1         :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+VCCINT                       : K15       : power  :                   : 1.2V    :           :                
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K22       :        :                   :         : 6         :                
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : K28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 1         :                
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : L28       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M5        :        :                   :         : 1         :                
+nSTATUS                      : M6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M7        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M8        :        :                   :         : 1         :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M21       :        :                   :         : 6         :                
+MSEL2                        : M22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M23       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M27       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : M28       :        :                   :         : 6         :                
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N4        :        :                   :         : 1         :                
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+demux_in[21]                 : N8        : input  : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N21       :        :                   :         : 6         :                
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : N26       :        :                   :         : 6         :                
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+demux_out[52]                : P1        : output : 2.5 V             :         : 1         : N              
+demux_out[53]                : P2        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P21       :        :                   :         : 5         :                
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P26       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P27       :        :                   :         : 6         :                
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+demux_out[115]               : R1        : output : 2.5 V             :         : 2         : N              
+demux_out[51]                : R2        : output : 2.5 V             :         : 2         : N              
+demux_out[86]                : R3        : output : 2.5 V             :         : 2         : N              
+demux_out[20]                : R4        : output : 2.5 V             :         : 2         : N              
+demux_out[84]                : R5        : output : 2.5 V             :         : 2         : N              
+demux_out[22]                : R6        : output : 2.5 V             :         : 2         : N              
+demux_out[118]               : R7        : output : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R21       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R22       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R23       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R24       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R27       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : R28       :        :                   :         : 5         :                
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+demux_out[116]               : T3        : output : 2.5 V             :         : 2         : N              
+demux_in[20]                 : T4        : input  : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+demux_out[54]                : T7        : output : 2.5 V             :         : 2         : N              
+demux_out[16]                : T8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T21       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T22       :        :                   :         : 5         :                
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : T26       :        :                   :         : 5         :                
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+demux_out[83]                : U1        : output : 2.5 V             :         : 2         : N              
+demux_out[19]                : U2        : output : 2.5 V             :         : 2         : N              
+demux_out[85]                : U3        : output : 2.5 V             :         : 2         : N              
+demux_out[117]               : U4        : output : 2.5 V             :         : 2         : N              
+demux_out[79]                : U5        : output : 2.5 V             :         : 2         : N              
+demux_in[18]                 : U6        : input  : 2.5 V             :         : 2         : N              
+demux_out[80]                : U7        : output : 2.5 V             :         : 2         : N              
+demux_in[15]                 : U8        : input  : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+demux_out[64]                : U21       : output : 2.5 V             :         : 5         : N              
+demux_out[98]                : U22       : output : 2.5 V             :         : 5         : N              
+demux_out[1]                 : U23       : output : 2.5 V             :         : 5         : N              
+demux_out[95]                : U24       : output : 2.5 V             :         : 5         : N              
+demux_in[31]                 : U25       : input  : 2.5 V             :         : 5         : N              
+demux_out[96]                : U26       : output : 2.5 V             :         : 5         : N              
+demux_out[34]                : U27       : output : 2.5 V             :         : 5         : N              
+demux_out[0]                 : U28       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V1        :        :                   :         : 2         :                
+demux_out[21]                : V2        : output : 2.5 V             :         : 2         : N              
+demux_in[19]                 : V3        : input  : 2.5 V             :         : 2         : N              
+demux_in[22]                 : V4        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V5        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : V6        :        :                   :         : 2         :                
+mux_in[61]                   : V7        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : V8        :        :                   :         : 2         :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+demux_out[66]                : V21       : output : 2.5 V             :         : 5         : N              
+demux_out[32]                : V22       : output : 2.5 V             :         : 5         : N              
+demux_out[65]                : V23       : output : 2.5 V             :         : 5         : N              
+demux_out[97]                : V24       : output : 2.5 V             :         : 5         : N              
+demux_out[33]                : V25       : output : 2.5 V             :         : 5         : N              
+demux_out[2]                 : V26       : output : 2.5 V             :         : 5         : N              
+demux_in[0]                  : V27       : input  : 2.5 V             :         : 5         : N              
+demux_out[127]               : V28       : output : 2.5 V             :         : 5         : N              
+demux_out[111]               : W1        : output : 2.5 V             :         : 2         : N              
+demux_out[50]                : W2        : output : 2.5 V             :         : 2         : N              
+mux_in[25]                   : W3        : input  : 2.5 V             :         : 2         : N              
+mux_out[23]                  : W4        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+mux_in[88]                   : W7        : input  : 2.5 V             :         : 2         : N              
+mux_out[25]                  : W8        : output : 2.5 V             :         : 2         : N              
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+VCCINT                       : W16       : power  :                   : 1.2V    :           :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+demux_out[63]                : W21       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : W22       :        :                   :         : 5         :                
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W26       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : W27       :        :                   :         : 5         :                
+demux_out[31]                : W28       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y1        :        :                   :         : 2         :                
+GND+                         : Y2        :        :                   :         : 2         :                
+demux_in[16]                 : Y3        : input  : 2.5 V             :         : 2         : N              
+demux_out[48]                : Y4        : output : 2.5 V             :         : 2         : N              
+mux_out[27]                  : Y5        : output : 2.5 V             :         : 2         : N              
+mux_out[30]                  : Y6        : output : 2.5 V             :         : 2         : N              
+mux_in[89]                   : Y7        : input  : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+mux_in[29]                   : Y10       : input  : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+mux_in[21]                   : Y12       : input  : 2.5 V             :         : 3         : N              
+mux_in[114]                  : Y13       : input  : 2.5 V             :         : 3         : N              
+mux_in[20]                   : Y14       : input  : 2.5 V             :         : 3         : N              
+mux_in[112]                  : Y15       : input  : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y16       :        :                   :         : 4         :                
+mux_out[8]                   : Y17       : output : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+demux_out[103]               : Y19       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y22       :        :                   :         : 5         :                
+demux_out[120]               : Y23       : output : 2.5 V             :         : 5         : N              
+demux_in[25]                 : Y24       : input  : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y25       :        :                   :         : 5         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : Y26       :        :                   :         : 5         :                
+demux_in[2]                  : Y27       : input  : 2.5 V             :         : 5         : N              
+demux_in[1]                  : Y28       : input  : 2.5 V             :         : 5         : N              
