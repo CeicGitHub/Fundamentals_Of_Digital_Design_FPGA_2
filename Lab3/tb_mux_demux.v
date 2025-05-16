@@ -1,8 +1,27 @@
+/*Este modulo es de "testbench" y trabaja en conjunto con el "top_mux_demux" 
+para funcionar en Model Sim*/
+
+/*Requerimientos (modificar en "parameter")
+
+	1.- WIDTH = 32;
+	1.- CHANNELS = 4;
+	
+	2.- WIDTH = 1;
+	2.- CHANNELS = 8;
+	
+	3.- WIDTH = 18;
+	3.- CHANNELS = 16;
+
+*/
+
+
 `timescale 1ns/1ps
 
 module tb_mux_demux;
 
-    // Parámetros para prueba
+    /*Parametros de las pruebas, aqui se pueden modificar dependiendo que requerimientos se necesite
+	 en los requerimientos estan algunos ejemplos de arriba*/
+	 
     parameter WIDTH = 32;
     parameter CHANNELS = 4;
     localparam SEL_WIDTH = $clog2(CHANNELS);

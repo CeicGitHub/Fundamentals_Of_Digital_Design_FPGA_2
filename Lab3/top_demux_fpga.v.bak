@@ -1,6 +1,3 @@
-/*Este modulo se debugea directamente en la FPGA para observar el "demultiplexor"
-esta haciendo uso del archivo demux.v*/
-
 module top_demux_fpga(
     input  wire [17:0] SW,
     output wire [7:0] LEDG

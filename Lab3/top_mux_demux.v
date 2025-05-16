@@ -1,3 +1,7 @@
+
+/*Este modulo es para referenciarlo al "testbench" - "tb_mux_demux" y poder trabajar en conjunto la simulación
+en Model Sim.*/
+
 module top_mux_demux #(
 	parameter WIDTH = 32,
 	parameter CHANNELS = 4
