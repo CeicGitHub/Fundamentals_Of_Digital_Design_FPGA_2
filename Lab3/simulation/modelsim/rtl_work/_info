@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/Verilog/Lab3/simulation/modelsim
 vdemux
-Z1 !s110 1747361389
+Z1 !s110 1747505590
 !i10b 1
 !s100 _UT9D`GZ4XCm]dVDi5jzW3
 IPLA>eZRTml0a1BS@YP:zK0
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1747361389.000000
+Z4 !s108 1747505590.000000
 !s107 D:/Verilog/Lab3/demux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/demux.v|
 !i113 1
@@ -53,21 +53,21 @@ R5
 R6
 R7
 vtb_mux_demux
-Z8 !s110 1747361390
+Z8 !s110 1747505591
 !i10b 1
-!s100 b2MHUM:B<3ncNIh;E:8I:2
-I1O?m5of5nEJLXVl=[9hcL2
+!s100 RRcl1A1k_ja;nk0Hm5cMM1
+Ie`4ib]F8hS=i7F[P=^9R?0
 R2
 R0
-w1747233753
+w1747505542
 8D:/Verilog/Lab3/tb_mux_demux.v
 FD:/Verilog/Lab3/tb_mux_demux.v
-L0 3
+L0 20
 R3
 r1
 !s85 0
 31
-Z9 !s108 1747361390.000000
+!s108 1747505591.000000
 !s107 D:/Verilog/Lab3/tb_mux_demux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/tb_mux_demux.v|
 !i113 1
@@ -77,19 +77,19 @@ R7
 vtop_mux_demux
 R8
 !i10b 1
-!s100 IiKCZT0BaMT<ZLi0FAC;Z0
-Ie<C6J?3mVB5mhL8]ONS@12
+!s100 BEXQ:[h;:nkFDgQ8GKl532
+Ic@L82OfZIDTT9SO49MV:M1
 R2
 R0
-w1747269422
+w1747424415
 8D:/Verilog/Lab3/top_mux_demux.v
 FD:/Verilog/Lab3/top_mux_demux.v
-L0 1
+L0 5
 R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 D:/Verilog/Lab3/top_mux_demux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab3|D:/Verilog/Lab3/top_mux_demux.v|
 !i113 1

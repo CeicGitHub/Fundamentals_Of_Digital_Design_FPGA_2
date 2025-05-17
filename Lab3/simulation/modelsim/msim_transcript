@@ -12,49 +12,49 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/Verilog/Lab3 {D:/Verilog/Lab3/mux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:09:49 on May 15,2025
+# Start time: 11:13:10 on May 17,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/Lab3" D:/Verilog/Lab3/mux.v 
 # -- Compiling module mux
 # 
 # Top level modules:
 # 	mux
-# End time: 19:09:49 on May 15,2025, Elapsed time: 0:00:00
+# End time: 11:13:10 on May 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Verilog/Lab3 {D:/Verilog/Lab3/demux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:09:49 on May 15,2025
+# Start time: 11:13:10 on May 17,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/Lab3" D:/Verilog/Lab3/demux.v 
 # -- Compiling module demux
 # 
 # Top level modules:
 # 	demux
-# End time: 19:09:49 on May 15,2025, Elapsed time: 0:00:00
+# End time: 11:13:10 on May 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Verilog/Lab3 {D:/Verilog/Lab3/top_mux_demux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:09:50 on May 15,2025
+# Start time: 11:13:10 on May 17,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/Lab3" D:/Verilog/Lab3/top_mux_demux.v 
 # -- Compiling module top_mux_demux
 # 
 # Top level modules:
 # 	top_mux_demux
-# End time: 19:09:50 on May 15,2025, Elapsed time: 0:00:00
+# End time: 11:13:11 on May 17,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Verilog/Lab3 {D:/Verilog/Lab3/tb_mux_demux.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:09:50 on May 15,2025
+# Start time: 11:13:11 on May 17,2025
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Verilog/Lab3" D:/Verilog/Lab3/tb_mux_demux.v 
 # -- Compiling module tb_mux_demux
 # 
 # Top level modules:
 # 	tb_mux_demux
-# End time: 19:09:50 on May 15,2025, Elapsed time: 0:00:00
+# End time: 11:13:11 on May 17,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"   tb_mux_demux
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_mux_demux 
-# Start time: 19:09:51 on May 15,2025
+# Start time: 11:13:11 on May 17,2025
 # Loading work.tb_mux_demux
 # Loading work.mux
 # Loading work.demux
@@ -73,9 +73,9 @@
 # DEMUX SEL=1 -> OUT=0000000000000000a5a5a5a500000000
 # DEMUX SEL=2 -> OUT=00000000a5a5a5a50000000000000000
 # DEMUX SEL=3 -> OUT=a5a5a5a5000000000000000000000000
-# ** Note: $finish    : D:/Verilog/Lab3/tb_mux_demux.v(52)
+# ** Note: $finish    : D:/Verilog/Lab3/tb_mux_demux.v(71)
 #    Time: 80 ns  Iteration: 0  Instance: /tb_mux_demux
 # 1
-# Break in Module tb_mux_demux at D:/Verilog/Lab3/tb_mux_demux.v line 52
-# End time: 19:26:58 on May 15,2025, Elapsed time: 0:17:07
+# Break in Module tb_mux_demux at D:/Verilog/Lab3/tb_mux_demux.v line 71
+# End time: 11:15:23 on May 17,2025, Elapsed time: 0:02:12
 # Errors: 0, Warnings: 0

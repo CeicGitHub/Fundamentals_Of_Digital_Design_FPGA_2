@@ -1,0 +1,16 @@
+Fri May 16 16:11:41 MST 2025
+Trace back: can't read "_selector_tip": no such variable
+    while executing
+"set msg $_selector_tip"
+    (procedure "Wave::SelectorBalloon" line 17)
+    invoked from within
+"Wave::SelectorBalloon .main_pane.wave.interior.cs.body.pw.wf .main_pane.wave.interior.cs.body.pw.wf.grid.row0,selector.data 4 90 -1363 339"
+    ("eval" body line 1)
+    invoked from within
+"eval $_d($w,getmsgcb) $w $x $y $X $Y"
+    (procedure "mtiBalloon::_popUp" line 21)
+    invoked from within
+"mtiBalloon::_popUp .main_pane.wave.interior.cs.body.pw.wf.grid.row0,selector.data 4 90 -1363 339"
+    ("after" script)
+  <2:C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {can't read "_selector_tip": no such variable}
+  <1:eval:1: ::tk::dialog::error::bgerror {can't read "_selector_tip": no such variable}
