@@ -1,6 +1,3 @@
-/*This module use the hexadecimal decoder functions here can use
-	all the value for use in the bcd-7-segmenet*/
-
 module hex_decoder (
     input  [3:0] in,
     output reg [6:0] seg

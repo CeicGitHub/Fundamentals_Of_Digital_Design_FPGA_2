@@ -1,3 +1,6 @@
+/*This module use half, full and rippler adder's systems. 
+	This provide control in the operations.*/
+
 module mult_4bit_structural (
     input  [3:0] A,
     input  [3:0] B,

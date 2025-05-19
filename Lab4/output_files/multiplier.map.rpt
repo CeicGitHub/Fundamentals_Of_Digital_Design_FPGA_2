@@ -1,5 +1,5 @@
 Analysis & Synthesis report for multiplier
-Sun May 18 16:58:09 2025
+Sun May 18 19:07:42 2025
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 18 16:58:09 2025       ;
+; Analysis & Synthesis Status        ; Successful - Sun May 18 19:07:42 2025       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; multiplier                                  ;
 ; Top-level Entity Name              ; top_fpga_mult                               ;
@@ -284,31 +284,31 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun May 18 16:57:48 2025
+    Info: Processing started: Sun May 18 19:07:27 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off multiplier -c multiplier
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file half_adder.v
-    Info (12023): Found entity 1: half_adder File: D:/Verilog/Lab4/half_adder.v Line: 1
+    Info (12023): Found entity 1: half_adder File: D:/Verilog/Lab4/half_adder.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file full_adder.v
     Info (12023): Found entity 1: full_adder File: D:/Verilog/Lab4/full_adder.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mult_4bit_structural.v
-    Info (12023): Found entity 1: mult_4bit_structural File: D:/Verilog/Lab4/mult_4bit_structural.v Line: 1
+    Info (12023): Found entity 1: mult_4bit_structural File: D:/Verilog/Lab4/mult_4bit_structural.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file mult_4bit_tb.v
-    Info (12023): Found entity 1: mult_4bit_tb File: D:/Verilog/Lab4/mult_4bit_tb.v Line: 3
+    Info (12023): Found entity 1: mult_4bit_tb File: D:/Verilog/Lab4/mult_4bit_tb.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file mult_nbit_structural.v
-    Info (12023): Found entity 1: mult_Nbit_structural File: D:/Verilog/Lab4/mult_Nbit_structural.v Line: 1
+    Info (12023): Found entity 1: mult_Nbit_structural File: D:/Verilog/Lab4/mult_Nbit_structural.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file mult_nbit_tb.v
-    Info (12023): Found entity 1: mult_Nbit_tb File: D:/Verilog/Lab4/mult_Nbit_tb.v Line: 3
+    Info (12023): Found entity 1: mult_Nbit_tb File: D:/Verilog/Lab4/mult_Nbit_tb.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file hex_decoder.v
-    Info (12023): Found entity 1: hex_decoder File: D:/Verilog/Lab4/hex_decoder.v Line: 1
+    Info (12023): Found entity 1: hex_decoder File: D:/Verilog/Lab4/hex_decoder.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file top_fpga_mult.v
-    Info (12023): Found entity 1: top_fpga_mult File: D:/Verilog/Lab4/top_fpga_mult.v Line: 1
+    Info (12023): Found entity 1: top_fpga_mult File: D:/Verilog/Lab4/top_fpga_mult.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file ripple_adder_8.v
-    Info (12023): Found entity 1: ripple_adder_8 File: D:/Verilog/Lab4/ripple_adder_8.v Line: 1
+    Info (12023): Found entity 1: ripple_adder_8 File: D:/Verilog/Lab4/ripple_adder_8.v Line: 5
 Info (12127): Elaborating entity "top_fpga_mult" for the top level hierarchy
-Info (12128): Elaborating entity "mult_Nbit_structural" for hierarchy "mult_Nbit_structural:multiplier" File: D:/Verilog/Lab4/top_fpga_mult.v Line: 15
-Info (12128): Elaborating entity "hex_decoder" for hierarchy "hex_decoder:h0" File: D:/Verilog/Lab4/top_fpga_mult.v Line: 18
+Info (12128): Elaborating entity "mult_Nbit_structural" for hierarchy "mult_Nbit_structural:multiplier" File: D:/Verilog/Lab4/top_fpga_mult.v Line: 19
+Info (12128): Elaborating entity "hex_decoder" for hierarchy "hex_decoder:h0" File: D:/Verilog/Lab4/top_fpga_mult.v Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -317,9 +317,9 @@ Info (21057): Implemented 254 device resources after synthesis - the final resou
     Info (21059): Implemented 56 output pins
     Info (21061): Implemented 182 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Sun May 18 16:58:09 2025
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4766 megabytes
+    Info: Processing ended: Sun May 18 19:07:42 2025
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:33
 
 

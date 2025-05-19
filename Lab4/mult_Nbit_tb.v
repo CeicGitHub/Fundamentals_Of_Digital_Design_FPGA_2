@@ -1,3 +1,6 @@
+/*This testebench can be used with "Nbit_structural" show the part for test
+in the model sim mechanism, can see all the operations in the monitor*/
+
 `timescale 1ns / 1ps
 
 module mult_Nbit_tb;

@@ -7,8 +7,8 @@ module full_adder(
 );
     wire S1, C1, C2;
 
-    half_adder HA1(.A(A), .B(B), .SUM(S1), .CARRY(C1));
-    half_adder HA2(.A(S1), .B(Cin), .SUM(SUM), .CARRY(C2));
+    half_adder HA1(.A(A), .B(B), .SUM(S1), .CARRY(C1));       //half_adder.v instance from the module
+    half_adder HA2(.A(S1), .B(Cin), .SUM(SUM), .CARRY(C2));   //half_adder.v instance from the module
     assign CARRY = C1 | C2;
 endmodule
 

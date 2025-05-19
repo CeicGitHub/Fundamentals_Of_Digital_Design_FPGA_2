@@ -1,3 +1,6 @@
+/*This is the base for use with the testbench Nbit, 
+ here can set the parameter for use in the testbench for example N value*/
+
 module mult_Nbit_structural #(
     parameter N = 8
 )(

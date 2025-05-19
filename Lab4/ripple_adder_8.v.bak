@@ -1,7 +1,3 @@
-/*This logic is for use 8 full adders and do a better operations in the
-	4bit multiplier, that need to use a more operations, here is the
-	main consideration with also the testbench and the other parameters*/
-
 module ripple_adder_8 (
     input  [7:0] A,
     input  [7:0] B,

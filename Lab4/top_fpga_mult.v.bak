@@ -1,7 +1,3 @@
-/*This logic is for use the fpga multiplier in the hardware test
-	here can see the instance parameterized for the all the values
-	will use the multiplier */
-
 module top_fpga_mult (
     input  [15:0] SW,
     output [6:0] HEX0, HEX1, HEX2, HEX3,
