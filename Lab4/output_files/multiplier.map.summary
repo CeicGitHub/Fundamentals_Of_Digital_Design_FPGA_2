@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun May 18 16:58:09 2025
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : multiplier
+Top-level Entity Name : top_fpga_mult
+Family : Cyclone IV E
+Total logic elements : 182
+    Total combinational functions : 182
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 72
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

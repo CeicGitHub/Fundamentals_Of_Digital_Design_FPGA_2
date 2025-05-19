@@ -1,0 +1,40 @@
+module mult_4bit_structural(
+    input [3:0] A,
+    input [3:0] B,
+    output [7:0] P
+);
+
+    wire [3:0] pp0, pp1, pp2, pp3; // productos parciales (ANDs)
+    wire [7:0] sum;                // sumas parciales
+    wire [7:0] carry;              // carries intermedios
+
+    // Generar productos parciales con compuertas AND
+    assign pp0 = {A[3]&B[0], A[2]&B[0], A[1]&B[0], A[0]&B[0]};
+    assign pp1 = {A[3]&B[1], A[2]&B[1], A[1]&B[1], A[0]&B[1]};
+    assign pp2 = {A[3]&B[2], A[2]&B[2], A[1]&B[2], A[0]&B[2]};
+    assign pp3 = {A[3]&B[3], A[2]&B[3], A[1]&B[3], A[0]&B[3]};
+
+    // Comenzar a sumar productos parciales (forma escalonada)
+    wire s1, c1, s2, c2, s3, c3, s4, c4, s5, c5, s6, c6, s7, c7, s8, c8, s9, c9, s10, c10;
+
+    // Nivel 1
+    assign P[0] = pp0[0]; // bit menos significativo
+
+    half_adder HA1 (.A(pp0[1]), .B(pp1[0]), .SUM(s1), .CARRY(c1));
+    full_adder FA1 (.A(pp0[2]), .B(pp1[1]), .Cin(pp2[0]), .SUM(s2), .CARRY(c2));
+    full_adder FA2 (.A(pp0[3]), .B(pp1[2]), .Cin(pp2[1]), .SUM(s3), .CARRY(c3));
+    full_adder FA3 (.A(pp1[3]), .B(pp2[2]), .Cin(pp3[1]), .SUM(s4), .CARRY(c4));
+    full_adder FA4 (.A(pp2[3]), .B(pp3[2]), .Cin(c4),    .SUM(s5), .CARRY(c5));
+    half_adder HA2 (.A(pp3[3]), .B(c5), .SUM(s6), .CARRY(c6));
+
+    // Nivel 2
+    assign P[1] = s1;
+    full_adder FA5 (.A(s2), .B(c1), .Cin(1'b0), .SUM(P[2]), .CARRY(c7));
+    full_adder FA6 (.A(s3), .B(c2), .Cin(c7),   .SUM(P[3]), .CARRY(c8));
+    full_adder FA7 (.A(s4), .B(c3), .Cin(c8),   .SUM(P[4]), .CARRY(c9));
+    full_adder FA8 (.A(s5), .B(c9), .Cin(pp3[0]), .SUM(P[5]), .CARRY(c10));
+    full_adder FA9 (.A(s6), .B(c10), .Cin(1'b0), .SUM(P[6]), .CARRY(P[7]));
+
+endmodule
+
+

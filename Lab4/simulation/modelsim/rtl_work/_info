@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Verilog/Lab4/simulation/modelsim
+vmult_Nbit_structural
+Z1 !s110 1747608902
+!i10b 1
+!s100 [;5]42^Sab90K5cVm>23f0
+IfH7WFJ8;3hm[JA`zWmKDN2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1747542024
+8D:/Verilog/Lab4/mult_Nbit_structural.v
+FD:/Verilog/Lab4/mult_Nbit_structural.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1747608902.000000
+!s107 D:/Verilog/Lab4/mult_Nbit_structural.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab4|D:/Verilog/Lab4/mult_Nbit_structural.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/Verilog/Lab4
+Z7 tCvgOpt 0
+nmult_@nbit_structural
+vmult_Nbit_tb
+R1
+!i10b 1
+!s100 BS0z1UFJ@KFMJNQgBB5Mj0
+Ik^_9lRTEXiJR?7O91KZP01
+R2
+R0
+w1747598332
+8D:/Verilog/Lab4/mult_Nbit_tb.v
+FD:/Verilog/Lab4/mult_Nbit_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/Verilog/Lab4/mult_Nbit_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Verilog/Lab4|D:/Verilog/Lab4/mult_Nbit_tb.v|
+!i113 1
+R5
+R6
+R7
+nmult_@nbit_tb

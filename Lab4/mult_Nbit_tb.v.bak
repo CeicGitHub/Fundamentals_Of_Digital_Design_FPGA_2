@@ -1,0 +1,54 @@
+`timescale 1ns / 1ps
+
+module mult_Nbit_tb;
+
+    parameter N = 32;
+
+    reg  [N-1:0] A, B;
+    wire [2*N-1:0] P_structural;
+    reg  [2*N-1:0] P_expected;
+
+    integer i;
+    integer errors;
+
+    // Instancia del multiplicador parametrizable
+    mult_Nbit_structural #(N) uut (
+        .A(A),
+        .B(B),
+        .P(P_structural)
+    );
+
+    // Función de referencia usando operador '*'
+    function [2*N-1:0] check_multiplication;
+        input [N-1:0] A_in;
+        input [N-1:0] B_in;
+        begin
+            check_multiplication = A_in * B_in;
+        end
+    endfunction
+
+    initial begin
+        errors = 0;
+
+        for (i = 0; i < 1000; i = i + 1) begin
+            A = $random;
+            B = $random;
+            #1; // pequeña espera para propagación
+
+            P_expected = check_multiplication(A, B);
+
+            if (P_structural !== P_expected) begin
+                $display("ERROR: A=%h B=%h | Expected=%h, Got=%h", A, B, P_expected, P_structural);
+                errors = errors + 1;
+            end
+        end
+
+        if (errors == 0)
+            $display("✅ TEST PASSED for N = %0d", N);
+        else
+            $display("❌ TEST FAILED for N = %0d: %0d errors", N, errors);
+
+        $finish;
+    end
+
+endmodule
