@@ -1,0 +1,17 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/Verilog/Lab5 {D:/Verilog/Lab5/alu4bit.v}
+
+vlog -vlog01compat -work work +incdir+D:/Verilog/Lab5 {D:/Verilog/Lab5/tb_alu4bit.v}
+
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_alu4bit
+
+add wave *
+view structure
+view signals
+run -all

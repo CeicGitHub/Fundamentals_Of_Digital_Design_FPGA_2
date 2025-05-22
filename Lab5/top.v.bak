@@ -1,0 +1,26 @@
+module top (
+    input  [17:0] SW,
+    output [6:0] HEX0, HEX1, HEX2, // Result (HEX0 = LSB)
+    output [6:0] HEX4, HEX6,       // Inputs A, B
+    output [7:0] LEDG,
+    output [17:0] LEDR
+);
+    wire [3:0] A = SW[3:0];
+    wire [3:0] B = SW[7:4];
+    wire [3:0] SEL = SW[17:14];
+    wire [7:0] RESULT;
+
+    alu4bit alu_inst(.A(A), .B(B), .SEL(SEL), .RESULT(RESULT));
+
+    assign LEDG = RESULT;
+    assign LEDR[3:0] = A;
+    assign LEDR[7:4] = B;
+    assign LEDR[17:14] = SEL;
+
+    hex7seg h0(.num(RESULT[3:0]), .seg(HEX0));
+    hex7seg h1(.num(RESULT[7:4]), .seg(HEX1));
+    assign HEX2 = 7'b1111111;
+
+    hex7seg h4(.num(B), .seg(HEX4));
+    hex7seg h6(.num(A), .seg(HEX6));
+endmodule
