@@ -1,0 +1,317 @@
+|lab2_top
+SW[0] => B[0].IN2
+SW[1] => B[1].IN2
+SW[2] => B[2].IN2
+SW[3] => B[3].IN2
+SW[4] => K.IN1
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+SW[10] => ~NO_FANOUT~
+SW[11] => ~NO_FANOUT~
+SW[12] => ~NO_FANOUT~
+SW[13] => ~NO_FANOUT~
+SW[14] => A[0].IN2
+SW[15] => A[1].IN2
+SW[16] => A[2].IN2
+SW[17] => A[3].IN2
+LEDR[0] << B[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] << B[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] << B[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] << B[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] << K.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+LEDR[10] << <GND>
+LEDR[11] << <GND>
+LEDR[12] << <GND>
+LEDR[13] << <GND>
+LEDR[14] << A[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[15] << A[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[16] << A[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[17] << A[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[0] << signed_S[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] << signed_S[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[2] << signed_S[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[3] << S[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDG[4] << <GND>
+LEDG[5] << <GND>
+LEDG[6] << <GND>
+LEDG[7] << <GND>
+LEDG[8] << <GND>
+HEX0[0] << lab2_display_decimal:disp.HEX0
+HEX0[1] << lab2_display_decimal:disp.HEX0
+HEX0[2] << lab2_display_decimal:disp.HEX0
+HEX0[3] << lab2_display_decimal:disp.HEX0
+HEX0[4] << lab2_display_decimal:disp.HEX0
+HEX0[5] << lab2_display_decimal:disp.HEX0
+HEX0[6] << lab2_display_decimal:disp.HEX0
+HEX1[0] << lab2_display_decimal:disp.HEX1
+HEX1[1] << lab2_display_decimal:disp.HEX1
+HEX1[2] << lab2_display_decimal:disp.HEX1
+HEX1[3] << lab2_display_decimal:disp.HEX1
+HEX1[4] << lab2_display_decimal:disp.HEX1
+HEX1[5] << lab2_display_decimal:disp.HEX1
+HEX1[6] << lab2_display_decimal:disp.HEX1
+HEX2[0] << lab2_display_decimal:disp.HEX2
+HEX2[1] << lab2_display_decimal:disp.HEX2
+HEX2[2] << lab2_display_decimal:disp.HEX2
+HEX2[3] << lab2_display_decimal:disp.HEX2
+HEX2[4] << lab2_display_decimal:disp.HEX2
+HEX2[5] << lab2_display_decimal:disp.HEX2
+HEX2[6] << lab2_display_decimal:disp.HEX2
+HEX3[0] << lab2_hex_7seg:hexB.out
+HEX3[1] << lab2_hex_7seg:hexB.out
+HEX3[2] << lab2_hex_7seg:hexB.out
+HEX3[3] << lab2_hex_7seg:hexB.out
+HEX3[4] << lab2_hex_7seg:hexB.out
+HEX3[5] << lab2_hex_7seg:hexB.out
+HEX3[6] << lab2_hex_7seg:hexB.out
+HEX4[0] << <VCC>
+HEX4[1] << <VCC>
+HEX4[2] << <VCC>
+HEX4[3] << <VCC>
+HEX4[4] << <VCC>
+HEX4[5] << <VCC>
+HEX4[6] << <VCC>
+HEX5[0] << lab2_hex_7seg:hexA.out
+HEX5[1] << lab2_hex_7seg:hexA.out
+HEX5[2] << lab2_hex_7seg:hexA.out
+HEX5[3] << lab2_hex_7seg:hexA.out
+HEX5[4] << lab2_hex_7seg:hexA.out
+HEX5[5] << lab2_hex_7seg:hexA.out
+HEX5[6] << lab2_hex_7seg:hexA.out
+
+
+|lab2_top|lab2_adder_subtractor_parametrizable:calc
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b_xor.IN0
+b[1] => b_xor.IN0
+b[2] => b_xor.IN0
+b[3] => b_xor.IN0
+K => carry[0].IN1
+sum[0] <= lab2_full_adder:gen_full_adders[0].FA.sum
+sum[1] <= lab2_full_adder:gen_full_adders[1].FA.sum
+sum[2] <= lab2_full_adder:gen_full_adders[2].FA.sum
+sum[3] <= lab2_full_adder:gen_full_adders[3].FA.sum
+cout <= lab2_full_adder:gen_full_adders[3].FA.cout
+
+
+|lab2_top|lab2_adder_subtractor_parametrizable:calc|lab2_full_adder:gen_full_adders[0].FA
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN0
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_adder_subtractor_parametrizable:calc|lab2_full_adder:gen_full_adders[1].FA
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN0
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_adder_subtractor_parametrizable:calc|lab2_full_adder:gen_full_adders[2].FA
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN0
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_adder_subtractor_parametrizable:calc|lab2_full_adder:gen_full_adders[3].FA
+a => sum.IN0
+a => cout.IN0
+a => cout.IN0
+b => sum.IN1
+b => cout.IN1
+b => cout.IN0
+cin => sum.IN1
+cin => cout.IN1
+cin => cout.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_display_decimal:disp
+value[0] => LessThan0.IN64
+value[0] => comb.DATAA
+value[0] => LessThan2.IN64
+value[0] => Add0.IN6
+value[1] => LessThan0.IN63
+value[1] => abs_val[1].DATAA
+value[1] => LessThan2.IN63
+value[1] => Add0.IN5
+value[2] => LessThan0.IN62
+value[2] => abs_val[2].DATAA
+value[2] => LessThan2.IN62
+value[2] => Add0.IN4
+value[3] => LessThan0.IN61
+value[3] => abs_val[3].DATAA
+value[3] => LessThan2.IN61
+value[3] => Add0.IN3
+value[4] => LessThan0.IN33
+value[4] => LessThan0.IN34
+value[4] => LessThan0.IN35
+value[4] => LessThan0.IN36
+value[4] => LessThan0.IN37
+value[4] => LessThan0.IN38
+value[4] => LessThan0.IN39
+value[4] => LessThan0.IN40
+value[4] => LessThan0.IN41
+value[4] => LessThan0.IN42
+value[4] => LessThan0.IN43
+value[4] => LessThan0.IN44
+value[4] => LessThan0.IN45
+value[4] => LessThan0.IN46
+value[4] => LessThan0.IN47
+value[4] => LessThan0.IN48
+value[4] => LessThan0.IN49
+value[4] => LessThan0.IN50
+value[4] => LessThan0.IN51
+value[4] => LessThan0.IN52
+value[4] => LessThan0.IN53
+value[4] => LessThan0.IN54
+value[4] => LessThan0.IN55
+value[4] => LessThan0.IN56
+value[4] => LessThan0.IN57
+value[4] => LessThan0.IN58
+value[4] => LessThan0.IN59
+value[4] => LessThan0.IN60
+value[4] => abs_val[4].DATAA
+value[4] => LessThan2.IN33
+value[4] => LessThan2.IN34
+value[4] => LessThan2.IN35
+value[4] => LessThan2.IN36
+value[4] => LessThan2.IN37
+value[4] => LessThan2.IN38
+value[4] => LessThan2.IN39
+value[4] => LessThan2.IN40
+value[4] => LessThan2.IN41
+value[4] => LessThan2.IN42
+value[4] => LessThan2.IN43
+value[4] => LessThan2.IN44
+value[4] => LessThan2.IN45
+value[4] => LessThan2.IN46
+value[4] => LessThan2.IN47
+value[4] => LessThan2.IN48
+value[4] => LessThan2.IN49
+value[4] => LessThan2.IN50
+value[4] => LessThan2.IN51
+value[4] => LessThan2.IN52
+value[4] => LessThan2.IN53
+value[4] => LessThan2.IN54
+value[4] => LessThan2.IN55
+value[4] => LessThan2.IN56
+value[4] => LessThan2.IN57
+value[4] => LessThan2.IN58
+value[4] => LessThan2.IN59
+value[4] => LessThan2.IN60
+value[4] => Add0.IN2
+HEX0[0] <= lab2_hex_7seg:u0.out
+HEX0[1] <= lab2_hex_7seg:u0.out
+HEX0[2] <= lab2_hex_7seg:u0.out
+HEX0[3] <= lab2_hex_7seg:u0.out
+HEX0[4] <= lab2_hex_7seg:u0.out
+HEX0[5] <= lab2_hex_7seg:u0.out
+HEX0[6] <= lab2_hex_7seg:u0.out
+HEX1[0] <= lab2_hex_7seg:u1.out
+HEX1[1] <= lab2_hex_7seg:u1.out
+HEX1[2] <= lab2_hex_7seg:u1.out
+HEX1[3] <= lab2_hex_7seg:u1.out
+HEX1[4] <= lab2_hex_7seg:u1.out
+HEX1[5] <= lab2_hex_7seg:u1.out
+HEX1[6] <= lab2_hex_7seg:u1.out
+HEX2[0] <= <GND>
+HEX2[1] <= <GND>
+HEX2[2] <= <GND>
+HEX2[3] <= <GND>
+HEX2[4] <= <GND>
+HEX2[5] <= <GND>
+HEX2[6] <= LessThan2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_display_decimal:disp|lab2_hex_7seg:u0
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_display_decimal:disp|lab2_hex_7seg:u1
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_hex_7seg:hexA
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab2_top|lab2_hex_7seg:hexB
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

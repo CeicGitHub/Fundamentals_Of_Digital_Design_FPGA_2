@@ -1,0 +1,31 @@
+module lab2_display_decimal (
+    input [3:0] value,
+    output [6:0] HEX0, // unidades
+    output [6:0] HEX1, // decenas
+    output [6:0] HEX2  // signo (- o espacio)
+);
+    wire signed [4:0] signed_val = value[3] ? {1'b1, value} : {1'b0, value};
+    wire [6:0] abs_val = signed_val[4] ? (~signed_val + 1'b1) : signed_val;
+
+    reg [3:0] unidades, decenas;
+    reg [6:0] signo;
+    wire [6:0] dec0, dec1;
+
+    always @(*) begin
+        if (abs_val >= 10) begin
+            decenas = 1;
+            unidades = abs_val - 10;
+        end else begin
+            decenas = 0;
+            unidades = abs_val;
+        end
+        signo = signed_val[4] ? 7'b011_1111 : 7'b111_1111;
+    end
+
+    hex_7seg h0 (.in(unidades), .out(dec0));
+    hex_7seg h1 (.in(decenas),  .out(dec1));
+
+    assign HEX0 = dec0;
+    assign HEX1 = dec1;
+    assign HEX2 = signo;
+endmodule
