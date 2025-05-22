@@ -1,3 +1,8 @@
+/*This module is part from demux functionaly allows the consideration for
+	always block and the cycle for selector options
+Was did by: Team14: Alonso Emmanuel Lopez Macias & Cesar Eduardo Inda Ceniceros
+*/
+
 module demux #(
     parameter WIDTH = 1,
     parameter CHANNELS = 4

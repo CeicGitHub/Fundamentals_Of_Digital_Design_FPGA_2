@@ -1,3 +1,8 @@
+/*This module is part from mux functionaly allows the inputs
+considerations for logic channels and the width parameter
+Was did by: Team14: Alonso Emmanuel Lopez Macias & Cesar Eduardo Inda Ceniceros
+*/
+
 module mux #(
     parameter WIDTH = 1,
     parameter CHANNELS = 4

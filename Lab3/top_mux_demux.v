@@ -2,6 +2,12 @@
 /*Este modulo es para referenciarlo al "testbench" - "tb_mux_demux" y poder trabajar en conjunto la simulación
 en Model Sim.*/
 
+/*This module is part from mux functionaly allows the inputs
+considerations for logic channels and the width parameter
+Was did by: Team14: Alonso Emmanuel Lopez Macias & Cesar Eduardo Inda Ceniceros
+*/
+
+
 module top_mux_demux #(
 	parameter WIDTH = 32,
 	parameter CHANNELS = 4

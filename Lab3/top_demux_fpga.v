@@ -1,6 +1,11 @@
 /*Este modulo se debugea directamente en la FPGA para observar el "demultiplexor"
 esta haciendo uso del archivo demux.v*/
 
+/*This module is part from demux functionaly allow the main 
+	functionality in the fpga instance
+Was did by: Team14: Alonso Emmanuel Lopez Macias & Cesar Eduardo Inda Ceniceros
+*/
+
 module top_demux_fpga(
     input  wire [17:0] SW,
     output wire [7:0] LEDG
